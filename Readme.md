@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Arturs Miglans](https://up.htmlacademy.ru/htmlcss/26/user/975927).
-* Наставник: `Неизвестно`.
+* Наставник: [Елизавета Винокурова](https://htmlacademy.ru/profile/elivin).
 
 ---
 
