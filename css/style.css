@@ -1,0 +1,17 @@
+.nav-menu{
+  list-style: none;
+}
+.visually-hidden{
+  display: none;
+}
+#wrapper {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 0px 30px;
+   background-image:  url("../img/background/background1.png") ;
+}
+
+body{
+
+
+}
