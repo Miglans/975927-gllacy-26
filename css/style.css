@@ -5,7 +5,7 @@
   display: none;
 }
 .wrapper {
-  background-image:  url("../img/background/background1.png");
+
  width: 1250px;
   margin: 0 auto;
   padding: 0px 30px;
@@ -14,6 +14,7 @@
 background-image:  url("../img/background/background1.png");
 
 }
+
 .slider-img-1{
   background-image: url("../img/background/background1-1.png");
   width: 1045px;
@@ -22,7 +23,7 @@ background-image:  url("../img/background/background1.png");
   margin-left: auto;
 
 }
-
+/*
 .main-slider-2{
   background-image:  url("../img/background/background2.png");
 
@@ -47,13 +48,16 @@ background-image:  url("../img/background/background1.png");
   margin-right: auto;
   margin-left: auto;
 
-}
+}*/
 a {
   color: inherit;
   text-decoration: none;
 }
 
 .main-description-list{
+  background: url("../img/seo/seo-back.png");
+  background-repeat: no-repeat;
+  height: 433px;
   list-style: none;
 
 }
@@ -88,12 +92,95 @@ list-style: none;
 
 }
 .header-shopping-cart-catalog{
-  background-image: url(../img/shopping-cart/basket-red.svg);
+  background-image: url("../img/shopping-cart/basket-red.svg");
    background-repeat: no-repeat;
 
 }
 .map{
-    background-image: url(../img/pin/pin.svg);
+    background-image: url("../img/pin/pin.svg");
    background-repeat: no-repeat;
 
+}
+.cranberry{
+   background-image: url("../img/banner/cranberry-back.jpg");
+   background-repeat: no-repeat;
+   width: 560px;
+   height: 229px;
+
+}
+.chocolate{
+  background-image: url("../img/banner/chocolate-back.jpg");
+   background-repeat: no-repeat;
+   width: 560px;
+   height: 229px;
+}
+
+.
+.ice-cream{
+  background-image: url("../img/seo/ice-cream.svg");
+   background-repeat: no-repeat;
+    width: 49px;
+    height: 49px;
+}
+.eco{
+  background-image: url("../img/seo/eco.svg");
+   background-repeat: no-repeat;
+   width: 49px;
+   height: 49px;
+}
+.cow{
+  background-image: url("../img/seo/cow.svg");
+   background-repeat: no-repeat;
+   width: 49px;
+   height: 49px;
+}
+.thermometer{
+  background-image: url("../img/seo/thermometer.svg");
+   background-repeat: no-repeat;
+   width: 49px;
+   height: 49px;
+}
+
+.news{
+  background-image: url("../img/news/strawberry-back.jpg");
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
+}
+.news-email{
+   background-image: url("../img/post/bg-post.svg");
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
+}
+.social{
+  list-style: none;
+}
+.social-fb{
+   background-image: url("../img/social/fb.svg");
+   background-repeat: no-repeat;
+   display: block;
+   width: 32px;
+   height: 32px;
+}
+.social-instagram{
+   background-image: url("../img/social/instagram.svg");
+   background-repeat: no-repeat;
+   display: block;
+   width: 32px;
+   height: 32px;
+}
+.social-twitter{
+   background-image: url("../img/social/twitter.svg");
+   background-repeat: no-repeat;
+   display: block;
+   width: 32px;
+   height: 32px;
+}
+.social-vk{
+   background-image: url("../img/social/vk.svg");
+   background-repeat: no-repeat;
+   display: block;
+   width: 32px;
+   height: 32px;
 }
