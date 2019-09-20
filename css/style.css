@@ -57,7 +57,7 @@ a {
 .main-description-list{
   background: url("../img/seo/seo-back.png");
   background-repeat: no-repeat;
-  height: 433px;
+
   list-style: none;
 
 }
@@ -74,21 +74,35 @@ list-style: none;
   list-style: none;
 }
 
-.header-search{
+.header-search {
+  content: "";
   background-image: url("../img/loupe/loupe.svg");
    background-repeat: no-repeat;
+   width: 17px;
+   height: 17px;
+   display: inline-block;
+
 
 }
 
-.header-login {
+.header-login::before {
+  content: "";
    background: url("../img/login/login.svg");
    background-repeat: no-repeat;
+   width: 21px;
+   height: 19px;
+   color: white;
+   display: inline-block;
 
 
 }
-.header-shopping-cart{
+.header-shopping-cart::before{
+  content: "";
   background-image: url("../img/shopping-cart/basket.svg");
    background-repeat: no-repeat;
+   width: 21px;
+   height: 20px;
+   display: inline-block;
 
 }
 .header-shopping-cart-catalog{
@@ -104,6 +118,7 @@ list-style: none;
 .cranberry{
    background-image: url("../img/banner/cranberry-back.jpg");
    background-repeat: no-repeat;
+   border-radius: 20px;
    width: 560px;
    height: 229px;
 
@@ -119,26 +134,22 @@ list-style: none;
 .ice-cream{
   background-image: url("../img/seo/ice-cream.svg");
    background-repeat: no-repeat;
-    width: 49px;
-    height: 49px;
+
 }
 .eco{
   background-image: url("../img/seo/eco.svg");
    background-repeat: no-repeat;
-   width: 49px;
-   height: 49px;
+
 }
 .cow{
   background-image: url("../img/seo/cow.svg");
    background-repeat: no-repeat;
-   width: 49px;
-   height: 49px;
+
 }
 .thermometer{
   background-image: url("../img/seo/thermometer.svg");
    background-repeat: no-repeat;
-   width: 49px;
-   height: 49px;
+
 }
 
 .news{
