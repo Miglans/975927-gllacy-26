@@ -17,8 +17,15 @@
 
     <nav class="main-nav">
       <ul class="nav-menu">
-       <li class="nav-menu-item header-dropdown-menu">
-        <a href="#">Каталог</a>
+       <li class="nav-menu-item header-dropdown">
+        <a class="header-dropbtn" href="#">Каталог</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-news"><a href="#">Новинки</a>
+            <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+         <li><a href="#">Мелорин</a></li>
+       </ul>
       </li>
       <li class="nav-menu-item">
        <a href="#">Доставка и оплата</a>
@@ -27,6 +34,9 @@
        <a href="#">О Компании</a>
      </li>
    </ul>
+
+
+
    <ul class="user-nav">
      <li class="nav-user-item">
       <a href="#" class="header-search" ></a>
@@ -38,6 +48,24 @@
       <a href="#" class="header-shopping-cart">Пусто</a>
     </li>
   </ul>
+
+  <form class="header-search-form">
+    <input type="text" name="search" placeholder="Крем-брюле">
+  </form>
+
+  <div class="login-form">
+    <label for="name"></label>
+    <input type="text" placeholder="email@example.com" name="name" required>
+    <label for="psw"></label>
+    <input type="password" placeholder="••••••••" name="psw" required>
+
+    <button type="submit">Войти</button>
+    <ul class="login-help">
+      <li> <a href="#">Забыли пароль?</a></li>
+      <li> <a href="#">Новая регистрация</a></li>
+    </ul>
+  </div>
+
 </nav>
 <div class="header-info">
   <p class="header-working-hours">С 10 до 20, ежедневно</p>
@@ -170,6 +198,29 @@
 </address>
 <a href="#">Форма обратной связи</a>
 </div>
+
+<section class="form-contact-us">
+        <form class="contact-us-popup">
+           <h4 class="popup-headeing">Мы обязательно вам ответим!</h4>
+          <div class="popup-name  popup-namel">
+            <label for="name"></label>
+            <input type="text" placeholder="Имя Фамилия" id="name" name="name">
+          </div>
+
+          <div class="popup-name  popup-name-email">
+            <label for="email"></label>
+            <input type="email" placeholder="email@example.com" id="email" name="email">
+          </div>
+
+          <div class="popup-name  popup-name-message">
+            <label for="message"></label>
+            <textarea  placeholder="В свободной форме" id="message" name="message"></textarea>
+          </div>
+
+          <button class="popup-btn" type="submit">Отправить</button>
+          <button class="popup-close"type="button">X</button>
+        </form>
+</section>
 
 </main>
 
