@@ -34,9 +34,9 @@
         <a href="#">Вход</a>
         <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
           <label for="name"></label>
-          <input type="email" placeholder="email@example.com" name="name" required>
+          <input type="email" id="name" placeholder="email@example.com" name="name" required>
           <label for="psw"></label>
-          <input type="password" placeholder="••••••••" name="psw" required>
+          <input type="password" id="psw" placeholder="••••••••" name="psw" required>
           <button type="submit">Войти</button>
           <ul class="login-help">
             <li> <a href="#">Забыли пароль?</a></li>
@@ -53,7 +53,7 @@
           <table class="oder-form">
 
             <tr class="order-form-item">
-              <td><button type="button" class="remove-order">Удалить</button></td>
+              <td><button type="button" class="remove-order"><span class="visually-hidden">Удалить</span></button></td>
               <td><img src="img/order-total/icecream-1.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
               <td class="order-description"><input type="hidden" name="name">Пломбир с апельсиновым джемом</td>
               <td class="order-quantaty"><span><input type="hidden" name="weight">1,5 кг х</span><input type="hidden" name="price"> 200 руб.</td>
@@ -61,7 +61,7 @@
             </tr>
 
             <tr class="order-form-item">
-              <td><button type="button" class="remove-order">Удалить</button></td>
+              <td><button type="button" class="remove-order"><span class="visually-hidden">Удалить</span></button></td>
               <td><img src="img/order-total/icecream-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
               <td class="order-description"><input type="hidden" name="name">Клубничный пломбир с присыпкой из белого шоколада</td>
               <td class="order-quantaty"><span><input type="hidden" name="weight">1,5 кг х</span><input type="hidden" name="price"> 300 руб.</td>
@@ -70,7 +70,7 @@
 
             <tr class="total-order-price">
               <td>Итого:</td>
-              <td>750 руб.</td>
+              <td><input type="hidden" name="total-price">750 руб.</td>
             </tr>
 
           </table>
@@ -113,22 +113,29 @@
       </div>
 
 
+
+<form>
       <fieldset class="price-filter">
         <legend>Цена: 100 руб. – 500 руб.</legend>
         <div class="price-filter-range">
           <div class="price-filter-range-controls">
             <div class="price-filter-scale">
-              <div class="price-filter-bar"><input type="range" name="price-range" min="100" max="500">
+              <div class="price-filter-bar">
+                <label class="visually-hidden" for="price_from">от</label>
+                  <input id="price_from">
+                    <span>–</span>
+                <label class="visually-hidden"  for="price_to">от</label>
+                  <input id="price_to">
               </div>
             </div>
-            <div class="price-filter-btn-min">
+            <button type="submit" class="price-filter-btn-min"></button>
 
             </div>
-            <div class="price-filter-btn-max">
+            <button type="submit" class="price-filter-btn-max"></button>
+            <div >
 
             </div>
           </div>
-        </div>
       </fieldset>
 
 
@@ -136,64 +143,65 @@
         <legend>Жирность:</legend>
         <ul class="filter-fat-radio">
           <li class="filter-radio-box">
-            <input type="radio" name="fat-0">
-            <label>0%</label>
+            <input type="radio" id="fat-0" name="fat-0">
+            <label for="fat-0">0%</label>
           </li>
 
           <li class="filter-radio-box">
-            <input type="radio" name="#fat-10" checked>
-            <label>до 10%</label>
+            <input type="radio" id="fat-10" name="fat-10" checked>
+            <label for="fat-10">до 10%</label>
           </li>
 
           <li class="filter-radio-box">
-            <input type="radio" name="fat-30">
-            <label>до 30%</label>
+            <input type="radio" id="fat-30" name="fat-30">
+            <label for="fat-30">до 30%</label>
           </li>
 
           <li class="filter-radio-box">
-            <input type="radio" name="fat-30-plus">
-            <label>выше 30%</label>
+            <input type="radio" id="fat-30-plus" name="fat-30-plus">
+            <label for="fat-30-plus">выше 30%</label>
           </li>
         </ul>
 
       </fieldset>
 
-    </div>
+</div>
 
     <div class="filter-2">
 
-      <fieldset class="ad-on">
+     <fieldset class="ad-on">
         <legend>Наполнители:</legend>
         <ul class="filter-ad-on-checkbox">
           <li class="filter-checkbox">
-            <input type="checkbox" name="chocolate" checked>
-            <label>шоколадные</label>
+            <input type="checkbox" id="chocolate" name="chocolate" checked>
+            <label for="chocolate">шоколадные</label>
           </li>
 
           <li class="filter-checkbox">
-            <input type="checkbox" name="shugar" checked>
-            <label>сахарные присыпки</label>
+            <input type="checkbox" id="shugar" name="shugar" checked>
+            <label for="shugar">сахарные присыпки</label>
           </li>
 
           <li class="filter-checkbox">
-            <input type="checkbox" name="fruits">
-            <label>фрукты</label>
+            <input type="checkbox" id="fruits" name="fruits">
+            <label for="fruits">фрукты</label>
           </li>
 
           <li class="filter-checkbox">
-            <input type="checkbox" name="syrups">
-            <label>сиропы</label>
+            <input type="checkbox" id="syrups" name="syrups">
+            <label for="syrups">сиропы</label>
           </li>
 
           <li class="filter-checkbox">
-            <input type="checkbox" name="jams">
-            <label>джемы</label>
+            <input type="checkbox" id="jams" name="jams">
+            <label for="jams">джемы</label>
           </li>
         </ul>
       </fieldset>
       <button type="submit" class="filter-2-btn">Применить</button>
-    </form>
+
   </div>
+</form>
 </section>
 
 
@@ -341,8 +349,10 @@
 <div class="made-in">
   <a href="https://htmlacademy.ru/intensive/htmlcss">
     <img class="html-logo" src="img/logo-html/logo-htmlacademy.svg"  width="108" height="39" alt="Логотип НТМЛ Академии">
-    <p> Сделано в HTML Academy © 2019</p>
   </a>
+    <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <p> Сделано в HTML Academy © 2019</p>
+    </a>
 
 </div>
 
